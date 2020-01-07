@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Pixel Art</title>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Pixel Art </h1>
+
+    <h2>Choose Grid Size</h2>
+    <form id="sizePicker">
+        Grid Height:
+        <input type="number" id="input_height" name="height" min="1" value="8" required>
+        Grid Width:
+        <input type="number" id="input_width" name="width" min="1" value="8" required>
+        <input class='submit' type="submit">
+    </form>
+
+    <h2>Pick A Color</h2>
+    <input type="color" id="colorPicker">
+    
+    <h2>Drag and drop to fill</h2>
+    <div id="fill" class="color">
+        <img class="resize" src="images/fill.png">
+    </div>
+    
+
+    <h2>Design Canvas</h2>
+    <table id="pixel_canvas"></table>
+
+    <div id="download-btn" class="container">
+        <div class="button">
+          <div class="icon">
+            <i class="fa fa-floppy-o"></i>
+          </div>
+        </div>
+        <p>Download</p>
+      </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="pixel-art.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.js'></script>
+    
+
+
+</body>
+</html>
